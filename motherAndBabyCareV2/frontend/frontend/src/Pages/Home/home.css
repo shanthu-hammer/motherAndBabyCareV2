@@ -1,0 +1,17 @@
+.CustomSpacer {
+    margin-top: 100px;
+    color: blue;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
