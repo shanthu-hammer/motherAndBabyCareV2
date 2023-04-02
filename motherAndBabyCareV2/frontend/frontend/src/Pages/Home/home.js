@@ -5,6 +5,8 @@
 // Diapering 
 //Toys
 //Gifts 
+///motherAndBabyCareV2/frontend/frontend/src/Assets/default.jpg
+import imgDefault from  '../../Assets/default.jpg'
 import CustomNavbar from "../../Components/Navbar";
 import HomeCarouselFade from "../../Components/Carousel";
 import React from "react";
@@ -17,16 +19,34 @@ const Home = () => {
       <CustomNavbar></CustomNavbar>
       <HomeCarouselFade></HomeCarouselFade>
       <div className="CustomSpacer"></div>
-      <div className="mx-2">
-        <div className="row">
-          <div className=" bg-warning">Column 1</div>
+
+      <div className="mx-2 text-center text-dark ">
+        <div className="row  ">
+          <div className=" col">
+          <h4 >Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>          
+          </div>
+
+          <div className="col "><h4>Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>     
+          </div>
+          <div className="col "><h4>Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>     
+          </div>
         </div>
-        <div className="row">
-          <div className="col-sm-50% bg-warning">prd 1</div>
-          <div className="col-sm-6">prd 2</div>
-          <div className="col-sm-6">prd 3</div>
+        <div className="row ">
+          <div className=" col"><h4>Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>
+          </div>
+          <div className="col "><h4>Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>     
+          </div>
+          <div className="col "><h4>Clothing</h4>
+          <img className='CustomImageBox' src={imgDefault}></img>     
+          </div>
         </div>
       </div>
+      <div className="CustomSpacer"></div>
     </>
   );
 };

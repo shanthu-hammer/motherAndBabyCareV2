@@ -15,15 +15,14 @@ function HomeCarouselFade() {
       {CarouselImgAry.map((imgg) => (
         <Carousel.Item>
           {/* {console.log(imgs)} */}
-          <div >
-          <img className="block w-100 h-20" src={imgg} alt="First slide" />
+          <div>
+            <img className="block w-100 mh-50" src={imgg} alt="First slide" />
           </div>
           <Carousel.Caption>
             {/* <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
           </Carousel.Caption>
         </Carousel.Item>
-       
       ))}
     </Carousel>
   );
