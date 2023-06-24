@@ -1,3 +1,8 @@
+/* Purpose of this Code
+- Home/Landing page
+- 
+*/
+
 //Feeding and Nutrition 
 //Bath and Skin 
 //Fashion Accessories
@@ -12,14 +17,21 @@ import HomeCarouselFade from "../../Components/Carousel";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Home/home.css";
-//import Map from "../../Components/Location";
-import Footer from '../../Components/Footer';
+
+import Footer from '../../Components/footer/Footer';
 const Home = () => {
-  
+  let navHeds={
+    Feeding: true,
+    BathingChanging: false,
+    Clothing: false,
+    ToysGifts: false,
+
+
+  }
 
   return (
     <>
-      <CustomNavbar></CustomNavbar>
+      <CustomNavbar name={navHeds}></CustomNavbar>
       <HomeCarouselFade></HomeCarouselFade>
       <div className="CustomSpacer"></div>
 
@@ -57,7 +69,7 @@ const Home = () => {
       <div className="CustomSpacer"></div>
       {/* Footer */}
       <Footer></Footer>
-      {/* <Map location={location} zoomLevel={17}></Map> */}
+      
     </>
   );
 };

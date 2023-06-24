@@ -4,9 +4,8 @@ const Footer = () => {
   var imgg;
   let shopImgAry = [];
   for (var i = 1; i < 2; i++) {
-    imgg = require("../Assets/shopImages/" + i + ".jpg");
+    imgg = require("../../Assets/shopImages/" + i + ".jpg");
     shopImgAry.push(imgg);
-    //console.log(imgs);
   }
   return (
     <>

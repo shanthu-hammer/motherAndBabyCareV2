@@ -1,0 +1,105 @@
+{
+  "product": [
+    {
+      "name": "chocolate",
+      "price": 100,
+      "color": "pink",
+      "id": 2
+    },
+    {
+      "name": "icecream",
+      "price": 100,
+      "color": "pink",
+      "id": 3
+    },
+    {
+      "name": "food",
+      "price": 100,
+      "color": "pink",
+      "id": 4
+    },
+    {
+      "name": "juice",
+      "price": 300,
+      "color": "pink",
+      "id": 5
+    },
+    {
+      "name": "juice",
+      "price": 300,
+      "color": "pink",
+      "id": 6
+    },
+    {
+      "name": "juice",
+      "price": 300,
+      "color": "blue",
+      "id": 7
+    },
+    {
+      "name": "soda",
+      "price": 300,
+      "color": "green",
+      "id": 8
+    },
+    {
+      "name": "milk",
+      "price": 10,
+      "color": "white",
+      "id": 9
+    },
+    {
+      "name": "candy",
+      "price": 10,
+      "color": "white",
+      "id": 10
+    },
+    {
+      "name": "candy",
+      "price": 10,
+      "color": "white",
+      "id": 11
+    },
+    {
+      "name": "ice cream ",
+      "id": "12",
+      "color": "chocolate",
+      "price": "10"
+    },
+    {
+      "name": "ice cream ",
+      "id": "13",
+      "color": "chocolate",
+      "price": "10"
+    },
+    {
+      "name": "ice cream ",
+      "id": 14,
+      "color": "chocolate",
+      "price": 10
+    },
+    {
+      "name": "a",
+      "id": "15",
+      "color": "blue",
+      "price": "30"
+    },
+    {
+      "name": "a",
+      "id": "16",
+      "color": "moon",
+      "price": "100"
+    },
+    {
+      "name": "banana",
+      "price": 100,
+      "color": "pink",
+      "id": "17"
+    }
+  ],
+  "sales": [
+    {
+      "discount": 20
+    }
+  ]
+}

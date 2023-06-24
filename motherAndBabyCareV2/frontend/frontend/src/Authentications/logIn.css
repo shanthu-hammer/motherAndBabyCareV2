@@ -1,0 +1,34 @@
+.background {
+padding: 30px;
+    background-color: rgb(54, 56, 55);
+    text-align: center;
+    color: rgb(255, 255, 255);
+   
+    
+    
+}
+
+.center {
+    background: rgb(206, 206, 206);
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    height: auto;
+    border: 3px solid;
+    border-color: rgb(34, 34, 51);
+    color: black;
+    padding: 20px;
+    
+}
+
+.customSpacer{
+    height: 10px;
+}
+
+.textBox{
+border:1px solid;
+border-radius: 3px;
+
+
+ 
+}
