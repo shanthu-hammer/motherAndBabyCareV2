@@ -116,14 +116,7 @@ const PassingEventObj = (probs) => {
           </button>
         </div>
       </form>
-      <button
-        onClick={() => {
-          handleTesting();
-        }}
-        className="btn btn-warning  m-3"
-      >
-        Testing{" "}
-      </button>
+     
       <br />
       <CustomTable tableData={probs.tableData} editData={callBckForEditData} />
     </>
