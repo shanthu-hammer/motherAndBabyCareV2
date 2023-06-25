@@ -17,7 +17,8 @@ const ParentTable = () => {
   const CallBackForSubmitButton = async (inputVal) => {
     // await setInsertData(inputVal);
     console.log(inputVal);
-    updateData(inputVal) 
+    //updateData(inputVal)
+    Pushdata() 
     //consition for when to use 
     //updateData(inputVal) 
     //or 
@@ -63,8 +64,10 @@ const ParentTable = () => {
     //data=data.slice()
     updateData(data);
   };
-  const Pushdata = () => {
-    post(insertData);
+  const Pushdata = (data) => {
+    data={name: 'banana', price: 100, color: 'pink', id: 18}
+    //data =delete data.id
+    post(data);
   };
 
   return (
