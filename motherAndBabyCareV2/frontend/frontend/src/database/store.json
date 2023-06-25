@@ -1,19 +1,19 @@
 {
   "product": [
     {
-      "name": "chocolate",
+      "name": "banana",
       "price": 100,
       "color": "pink",
       "id": 2
     },
     {
-      "name": "icecream",
+      "name": "ice",
       "price": 100,
       "color": "pink",
       "id": 3
     },
     {
-      "name": "Food",
+      "name": "mango00",
       "price": 100,
       "color": "pink",
       "id": 4
@@ -79,13 +79,13 @@
       "price": 10
     },
     {
-      "name": "a",
+      "name": "apple",
       "id": "15",
       "color": "blue",
       "price": "30"
     },
     {
-      "name": "a",
+      "name": "Pinapple",
       "id": "16",
       "color": "moon",
       "price": "100"
@@ -95,6 +95,18 @@
       "price": 100,
       "color": "pink",
       "id": "17"
+    },
+    {
+      "id": "-w_aY--"
+    },
+    {
+      "id": "mTso1rW"
+    },
+    {
+      "id": "rw71EbV"
+    },
+    {
+      "id": "WV_Ow_O"
     }
   ],
   "sales": [

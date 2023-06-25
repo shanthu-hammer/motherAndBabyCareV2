@@ -8,15 +8,20 @@ const ParentTable = () => {
   //to start the jason server
   //npx json-server --watch src/database/store.json --port 5000
 
-  const callBckForEditData = (Edata) => {
-    //Edata
-    console.log(Edata);
-    SetEdata(Edata);
-  };
-
-  const callBackForValue = (inputVal) => {
-    setInsertData(inputVal);
+ 
+  // const callBackSetData = async (data) => {
+  //   setInsertData(data);
+  //   console.log(data)
+  //   //updateData(data)    
+  // };
+  const CallBackForSubmitButton = async (inputVal) => {
+    // await setInsertData(inputVal);
     console.log(inputVal);
+    updateData(inputVal) 
+    //consition for when to use 
+    //updateData(inputVal) 
+    //or 
+    // Pushdata
   };
   let initialTableData = [
     {
@@ -43,7 +48,7 @@ const ParentTable = () => {
 
   const updateData = async (data) => {
     try {
-      const response = await put(4, data);
+      const response = await put(data.id, data);
 
       console.log("Data updated:", response.data);
       // Handle the response or update the state accordingly
@@ -54,20 +59,21 @@ const ParentTable = () => {
   };
 
   const handleTesting = () => {
-    let data = { name: "Food", price: 100, color: "pink", id: 4 };
+    let data = { name: "mango00", price: 100, color: "pink", id: 4 };
+    //data=data.slice()
     updateData(data);
   };
-  const handleClick = () => {
+  const Pushdata = () => {
     post(insertData);
   };
 
   return (
     <>
       <PassingEventObj
-        onValueChange={callBackForValue}
+        // callBackSetData={callBackSetData}
         edata={edata}
         tableData={tableData}
-        editData={callBckForEditData}
+        CallBackForSubmitButton={CallBackForSubmitButton}
       />
       <button
         onClick={() => {
@@ -79,7 +85,12 @@ const ParentTable = () => {
       </button>
       <br />
 
-      <button onClick={handleClick} class="m-3 btn btn-primary">
+      <button
+        onClick={() => {
+          Pushdata();
+        }}
+        class="m-3 btn btn-primary"
+      >
         push data
       </button>
     </>

@@ -6,8 +6,8 @@ const CustomTable = (probs) => {
   //console.log(probs);
 
   const handleEditClick = (data) => {
-    //console.log(data);
-    probs.editData(data)
+    console.log(data);
+    probs.editData(data)//passing to parent
   };
 
   return (

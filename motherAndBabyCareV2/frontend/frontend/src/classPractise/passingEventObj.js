@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CustomTable from "./table";
 import "bootstrap/dist/css/bootstrap.min.css";
 const PassingEventObj = (probs) => {
-  //{ onValueChange,editData }, edata,tableData
+ 
   var initial = {
     name: "",
     id: "",
@@ -14,17 +14,13 @@ const PassingEventObj = (probs) => {
     //Edata
     console.log(Edata);
     setFormData(Edata)
+    //probs.callBackSetData(Edata)//passing to parent 
+   // probs.onValueChange(formData);
     //SetEdata(Edata);
   };
 
-  const EditDataLoad = (data) => {
-    setFormData(data);
-    console.log(formData);
-  };
-  const handleTesting = () => {
-    // EditDataLoad(edata)
-    console.log(probs.edata);
-  };
+ 
+ 
 
   var validationInital = false;
 
@@ -49,8 +45,9 @@ const PassingEventObj = (probs) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    //console.log(e);
-    probs.onValueChange(formData);
+    //console.log(formData);
+   // probs.callBackSetData(formData);
+    probs.CallBackForSubmitButton(formData)
     if (validationData == false) {
     } else {
       // console.log(formData.name);
